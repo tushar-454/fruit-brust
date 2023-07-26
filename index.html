@@ -28,13 +28,18 @@
     <!-- navbar html start  -->
     <nav>
       <div class="container mx-auto px-8">
-        <div class="navWrap bg-none lg:bg-[#F85559] my-0 lg:my-12 p-8 lg:p-8 lg:rounded-full">
+        <div class="navWrap bg-none lg:bg-[#F85559] my-0 lg:my-12 py-4 lg:p-8 lg:rounded-full">
           <div class="flex flex-row-reverse lg:flex-row justify-between items-center">
             <div class="dropdown inline-block lg:hidden">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 20 20"
+                  style="enable-background:new 0 0 512 512" xml:space="preserve" class="h-10 w-10">
+                  <g>
+                    <path fill="#121212"
+                      d="M19 11H1a1 1 0 0 1 0-2h18a1 1 0 1 1 0 2zm0-7H1a1 1 0 0 1 0-2h18a1 1 0 1 1 0 2zm0 14H1a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2z"
+                      data-original="#000000" opacity="1" class=""></path>
+                  </g>
                 </svg>
               </label>
               <ul tabindex="0"
@@ -64,8 +69,8 @@
             </div>
             <!-- center  -->
             <div class="center flex items-center gap-4">
-              <img src="./images/logo.png" alt="logo" class="w-14">
-              <a class="text-white font-lato font-bold text-5xl">Fruit Burst</a>
+              <img src="./images/logo.png" alt="logo" class="w-14 lg:w-8">
+              <a class="text-white font-lato font-bold text-5xl lg:text-4xl">Fruit Burst</a>
             </div>
             <!-- last  -->
             <div class="last hidden lg:inline-block relative">
@@ -219,7 +224,7 @@
       <div class="dotd">
         <div class="container mx-auto px-8">
           <div class="dotdWrap my-8 md:my-10">
-            <div class="dotdTextWrap flex flex-col gap-3 lg:flex-row justify-between items-center">
+            <div class="dotdTextWrap flex flex-col gap-3 lg:flex-row justify-between items-center lg:items-start">
               <div class="dotdText text-center lg:text-left w-full md:w-[615px]">
                 <h1 class="text-[#121212] font-lato text-5xl font-extrabold">Deal of the day</h1>
                 <p class="text-[#12121261] font-medium font-lato  my-6">Contrary to popular belief, is not simply random
@@ -391,10 +396,10 @@
     <!-- meet the team start  -->
     <section>
       <div class="mtt">
-        <div class="container mx-auto px-8">
+        <div class="container mx-auto px-8 ">
           <div
-            class="mttWrap flex flex-col gap-12 justify-center items-center bg-[url('./images/team.png')] bg-no-repeat bg-cover relative my-32 py-20 md:py-40 rounded-lg -z-20">
-            <div class="blackOverlay absolute top-0 left-0 w-full h-full bg-[#12121271] rounded-lg -z-10"></div>
+            class="mttWrap flex flex-col gap-12 justify-center items-center bg-[url('./images/team.png'),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] bg-blend-overlay bg-no-repeat bg-cover relative my-32 py-20 md:py-40 rounded-lg">
+
             <div class="mttTextWrap w-full md:w-[615px] mx-auto text-center space-y-4">
               <h1 class="font-lato text-3xl sm:text-5xl font-extrabold text-white">Meet the team section</h1>
               <p class="font-lato font-medium text-[#FFF]">Contrary to popular belief, is not simply random text.
@@ -472,7 +477,7 @@
               <div class="colOne flex flex-col gap-8 row-start-2 row-end-3 xl:row-start-1 xl:row-end-2">
                 <div class="colOneItemWrap w-full lg:w-[370px] flex flex-col md:flex-row gap-3 items-center">
                   <div
-                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center">
+                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center mb-0 md:mb-8">
                     <img src="./images/icons/team.svg" alt="Team">
                   </div>
                   <div class="flex flex-col items-center md:items-start">
@@ -487,7 +492,7 @@
                 </div>
                 <div class="colOneItemWrap w-full lg:w-[370px] flex flex-col md:flex-row gap-3 items-center">
                   <div
-                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center">
+                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center mb-0 md:mb-8">
                     <img src="./images/icons/lovely.svg" alt="lovely">
                   </div>
                   <div class="flex flex-col items-center md:items-start">
@@ -502,7 +507,7 @@
                 </div>
                 <div class="colOneItemWrap w-full lg:w-[370px] flex flex-col md:flex-row gap-3 items-center">
                   <div
-                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center">
+                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center mb-0 md:mb-8">
                     <img src="./images/icons/gift.svg" alt="gift">
                   </div>
                   <div class="flex flex-col items-center md:items-start">
@@ -525,7 +530,7 @@
                 <div
                   class="colThreeItemWrap w-full lg:w-[370px] flex flex-col md:flex-row-reverse xl:flex-row-reverse gap-3 items-center">
                   <div
-                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center">
+                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center mb-0 md:mb-8">
                     <img src="./images/icons/fruit.svg" alt="fruit">
                   </div>
                   <div class="flex flex-col items-center md:flex-col md:items-end">
@@ -541,7 +546,7 @@
                 <div
                   class="colThreeItemWrap w-full lg:w-[370px] flex flex-col md:flex-row-reverse xl:flex-row-reverse gap-3 items-center">
                   <div
-                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center">
+                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center mb-0 md:mb-8">
                     <img src="./images/icons/icecream.svg" alt="icecream">
                   </div>
                   <div class="flex flex-col items-center md:flex-col md:items-end">
@@ -557,7 +562,7 @@
                 <div
                   class="colThreeItemWrap w-full lg:w-[370px] flex flex-col md:flex-row-reverse xl:flex-row-reverse gap-3 items-center">
                   <div
-                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center">
+                    class="w-[60px] md:w-[130px] lg:w-[130px] xl:w-[120px] h-[60px] bg-[#12121210] rounded-full flex items-center justify-center mb-0 md:mb-8">
                     <img src="./images/icons/like.svg" alt="like">
                   </div>
                   <div class="flex flex-col items-center md:flex-col md:items-end">
