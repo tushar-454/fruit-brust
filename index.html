@@ -9,11 +9,73 @@
   <!-- cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google lato font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+      ;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-
+    <!-- navbar html start  -->
+    <nav>
+      <div class="container mx-auto px-8">
+        <div class="navWrap bg-none lg:bg-[#F85559] my-0 lg:my-12 p-8 lg:p-8 lg:rounded-full">
+          <div class="flex flex-row-reverse lg:flex-row justify-between items-center">
+            <div class="dropdown inline-block lg:hidden">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </label>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 -left-[140px] items-end">
+                <!-- small device dropdown item -->
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <!-- start  -->
+            <div class="startItem hidden lg:inline-block">
+              <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a class="font-medium text-lg text-white hover:bg-transparent hover:text-white">Home</a></li>
+                  <li><a class="font-medium text-lg text-white hover:bg-transparent hover:text-white">About Us</a></li>
+                  <li><a class="font-medium text-lg text-white hover:bg-transparent hover:text-white">Shop</a></li>
+                  <li><a class="font-medium text-lg text-white hover:bg-transparent hover:text-white">All Fruits</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- center  -->
+            <div class="center flex items-center gap-4">
+              <img src="./images/logo.png" alt="logo" class="w-14">
+              <a class="text-white font-bold text-5xl">Fruit Burst</a>
+            </div>
+            <!-- last  -->
+            <div class="last hidden lg:inline-block relative">
+              <div class="form-control">
+                <input type="text" placeholder="Search here"
+                  class="input input-bordered w-24 md:w-auto border-none rounded-full pr-10" />
+              </div>
+              <img src="./images/icons/search.svg" alt="search" class="w-6 absolute top-3 right-3 cursor-pointer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar html end -->
   </header>
   <main>
 
